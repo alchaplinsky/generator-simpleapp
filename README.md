@@ -1,4 +1,4 @@
-# generator-simpleapp [![Build Status](https://secure.travis-ci.org/alchapone/generator-simpleapp.png?branch=master)](https://travis-ci.org/alchapone/generator-simpleapp)
+# generator-simpleapp
 
 > [Yeoman](http://yeoman.io) generator
 
