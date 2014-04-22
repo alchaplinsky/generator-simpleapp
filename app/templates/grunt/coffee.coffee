@@ -3,4 +3,9 @@ module.exports =
     options:
       bare: true
     files:
-      '.tmp/application.js': ['app/assets/javascripts/**/*.coffee']
+      'dist/assets/javascripts/application.js': ['app/assets/javascripts/**/*.coffee']
+  server:
+    options:
+      bare: true
+    files:
+      '.tmp/assets/javascripts/application.js': ['app/assets/javascripts/**/*.coffee']

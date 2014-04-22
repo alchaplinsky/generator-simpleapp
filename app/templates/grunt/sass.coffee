@@ -1,4 +1,7 @@
 module.exports =
   dist:
     files:
-      '.tmp/application.css': 'app/assets/stylesheets/application.sass'
+      'dist/assets/stylesheets/application.css': 'app/assets/stylesheets/application.{scss,sass}'
+  server:
+    files:
+      '.tmp/assets/stylesheets/application.css': 'app/assets/stylesheets/application.{scss,sass}'
