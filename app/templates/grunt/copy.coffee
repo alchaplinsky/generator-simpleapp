@@ -1,4 +1,15 @@
 module.exports =
+  tmp:
+    src: '<%= config.app %>/index.html'
+    dest: '<%= config.tmp %>/index.html'
+  html:
+    files: [
+      expand: true,
+      dot: true,
+      cwd: '<%= config.app %>'
+      dest: 'dist'
+      src: ['{,*/}*.html']
+    ]
   dist:
     files: [
       expand: true,
@@ -8,7 +19,6 @@ module.exports =
       src: [
         '*.{ico,png,txt}',
         '.htaccess',
-        'assets/images/{,*/}*.{webp,png,jpg,ico,gif}',
-        '{,*/}*.html'
+        'images/{,*/}*.{webp,png,jpg,ico,gif}',
       ]
     ]

@@ -1,15 +1,15 @@
 module.exports =
   sass:
-    files: ['app/assets/stylesheets/{,*/}*.{scss,sass}']
-    tasks: ['sass:server', 'autoprefixer']
+    files: ['app/stylesheets/{,*/}*.{scss,sass}']
+    tasks: ['sass:dist']
   coffee:
-    files: ['app/assets/javascripts/{,*/}*.coffee']
-    tasks: ['coffee:server']
+    files: ['app/javascripts/{,*/}*.coffee']
+    tasks: ['coffee:dist']
   livereload:
     options:
       livereload: '<%= connect.options.livereload %>'
     files: [
         'app/{,*/}*.html',
-        '.tmp/assets/stylesheets/{,*/}*.css',
+        '.tmp/stylesheets/{,*/}*.css',
         'app/images/{,*/}*'
     ]

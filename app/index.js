@@ -32,6 +32,11 @@ var SimpleappGenerator = yeoman.generators.Base.extend({
 
     this.prompt(prompts, function (props) {
       this.appName = props.appName;
+      this.config = {
+        app: 'app',
+        dist: 'dist',
+        tmp:  '.tmp'
+      }
 
       done();
     }.bind(this));
@@ -39,15 +44,15 @@ var SimpleappGenerator = yeoman.generators.Base.extend({
 
   app: function () {
     this.mkdir('app');
-    this.mkdir('app/assets/images');
-    this.mkdir('app/assets/stylesheets');
-    this.mkdir('app/assets/javascripts');
+    this.mkdir('app/images');
+    this.mkdir('app/stylesheets');
+    this.mkdir('app/javascripts');
 
-    this.write('app/assets/javascripts/application.coffee', '# Main CoffeeScript File');
-    this.write('app/assets/stylesheets/application.sass', '// Use @import to link all components');
+    this.write('app/javascripts/application.coffee', '# Main CoffeeScript File');
+    this.write('app/stylesheets/application.sass', '// Use @import to link all components');
 
     this.template('Gruntfile.coffee', 'Gruntfile.coffee');
-    this.directory('grunt', 'grunt');
+    this.directory('grunt', 'grunt', true);
     this.template('index.html', 'app/index.html');
 
     this.template('_package.json', 'package.json');

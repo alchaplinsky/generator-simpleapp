@@ -4,7 +4,7 @@ module.exports =
   dist:
     files: [
         expand: true,
-        cwd: '.tmp/assets/stylesheets/',
+        cwd: '.tmp/stylesheets/',
         src: '{,*/}*.css',
-        dest: '.tmp/assets/stylesheets/'
+        dest: '.tmp/stylesheets/'
     ]

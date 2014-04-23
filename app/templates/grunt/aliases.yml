@@ -1,0 +1,22 @@
+build:
+  - 'clean'
+  - 'sass:dist'
+  - 'coffee:dist'
+  - 'copy:tmp'
+  - 'copy:html'
+  - 'useminPrepare'
+  - 'usemin'
+  - 'concat'
+  - 'uglify'
+  - 'cssmin'
+  - 'copy:dist'
+  - 'clean:server'
+serve:
+  - 'clean:server'
+  - 'connect:livereload'
+  - 'sass:dist'
+  - 'coffee:dist'
+  - 'watch'
+deploy:
+  - 'build'
+  - 'gh-pages'

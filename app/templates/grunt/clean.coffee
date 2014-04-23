@@ -1,5 +1,5 @@
 module.exports =
   dist:
-    src: ['dist']
+    src: ['<%= config.dist %>']
   server:
-    src: ['.tmp']
+    src: ['<%= config.tmp %>']
