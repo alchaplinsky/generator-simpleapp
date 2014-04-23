@@ -1,5 +1,6 @@
 .DS_Store
 .tmp
 .sass-cache
+.grunt
 node_modules
 bower_components
