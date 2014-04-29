@@ -20,12 +20,31 @@ describe('simpleapp generator', function () {
   it('creates expected files', function (done) {
     var expected = [
       // add files you expect to exist here.
+      '.bowerrc',
       '.jshintrc',
-      '.editorconfig'
+      '.editorconfig',
+      '.gitignore',
+      'bower.json',
+      'package.json',
+      'Gruntfile.coffee',
+      'app/index.html',
+      'app/javascripts/application.coffee',
+      'app/stylesheets/application.sass',
+      'grunt/aliases.yml',
+      'grunt/autoprefixer.coffee',
+      'grunt/clean.coffee',
+      'grunt/coffee.coffee',
+      'grunt/connect.coffee',
+      'grunt/copy.coffee',
+      'grunt/gh-pages.coffee',
+      'grunt/sass.coffee',
+      'grunt/usemin.coffee',
+      'grunt/useminPrepare.coffee',
+      'grunt/watch.coffee'
     ];
 
     helpers.mockPrompt(this.app, {
-      'someOption': true
+      'appName': true
     });
     this.app.options['skip-install'] = true;
     this.app.run({}, function () {
