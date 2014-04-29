@@ -1,10 +1,14 @@
 {
   "name": "generator-simpleapp",
-  "version": "0.0.0",
-  "description": "Yeoman generator",
+  "version": "0.1.0",
+  "description": "Scaffold for simple web app with support of coffee and sass",
   "license": "MIT",
   "main": "app/index.js",
-  "repository": "alchapone/generator-simpleapp",
+  "homepage": "https://github.com/alchapone/generator-simpleapp",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:alchapone/generator-simpleapp.git"
+  },
   "author": {
     "name": "Alex Chaplinsky",
     "email": "alchapone@yandex.ru",
@@ -20,7 +24,14 @@
     "app"
   ],
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator",
+    "web",
+    "app",
+    "front-end",
+    "coffeescript",
+    "sass",
+    "jquery",
+    "grunt"
   ],
   "dependencies": {
     "yeoman-generator": "~0.16.0",
