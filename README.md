@@ -1,39 +1,20 @@
-# generator-simpleapp
+# generator-simpleapp [![Build Status](https://secure.travis-ci.org/alchapone/generator-simpleapp.png?branch=master)](https://travis-ci.org/alchapone/generator-simpleapp)
 
-> [Yeoman](http://yeoman.io) generator
 
+## Features
+* CSS Autoprefixing
+* Built-in preview server with LiveReload
+* Automagically compile CoffeeScript & Sass
+* Deploy site to gh-pages
 
 ## Getting Started
 
-### What is Yeoman?
+Make sure you have yo installed: ```npm install -g yo```
 
-Trick question. It's not a thing. It's this guy:
+Install the generator: ```npm install -g generator-simpleapp```
 
-![](http://i.imgur.com/JHaAlBJ.png)
+Run: ```yo simpleapp```
 
-Basically, he wears a top hat, lives in your computer, and waits for you to tell him what kind of application you wish to create.
-
-Not every new computer comes with a Yeoman pre-installed. He lives in the [npm](https://npmjs.org) package repository. You only have to ask for him once, then he packs up and moves into your hard drive. *Make sure you clean up, he likes new and shiny things.*
-
-```
-$ npm install -g yo
-```
-
-### Yeoman Generators
-
-Yeoman travels light. He didn't pack any generators when he moved in. You can think of a generator like a plug-in. You get to choose what type of application you wish to create, such as a Backbone application or even a Chrome extension.
-
-To install generator-simpleapp from npm, run:
-
-```
-$ npm install -g generator-simpleapp
-```
-
-Finally, initiate the generator:
-
-```
-$ yo simpleapp
-```
 
 ### Getting To Know Yeoman
 
