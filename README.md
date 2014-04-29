@@ -15,6 +15,9 @@ Install the generator: ```npm install -g generator-simpleapp```
 
 Run: ```yo simpleapp```
 
+## Usage
+
+TODO
 
 ### Getting To Know Yeoman
 
