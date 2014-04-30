@@ -1,6 +1,6 @@
 {
   "name": "generator-simpleapp",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Scaffold for simple web app with support of coffee and sass",
   "license": "MIT",
   "main": "app/index.js",
