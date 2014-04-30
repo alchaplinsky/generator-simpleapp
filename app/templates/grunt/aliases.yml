@@ -4,6 +4,7 @@ build:
   - 'coffee:dist'
   - 'copy:tmp'
   - 'copy:html'
+  - 'copy:bower'
   - 'useminPrepare'
   - 'usemin'
   - 'concat'

@@ -10,6 +10,10 @@ module.exports =
       dest: 'dist'
       src: ['{,*/}*.html']
     ]
+  bower:
+    expand: true
+    src: ['bower_components/**']
+    dest: '<%= config.tmp %'
   dist:
     files: [
       expand: true,
