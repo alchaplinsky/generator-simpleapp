@@ -13,7 +13,7 @@ module.exports =
   bower:
     expand: true
     src: ['bower_components/**']
-    dest: '<%= config.tmp %'
+    dest: '<%= config.tmp %>'
   dist:
     files: [
       expand: true,
