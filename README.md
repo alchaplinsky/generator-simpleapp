@@ -4,7 +4,7 @@
 ## Features
 * CSS Autoprefixing
 * Built-in preview server with LiveReload
-* Automagically compile CoffeeScript & Sass
+* Automatically compile CoffeeScript & Sass
 * Deploy site to gh-pages
 
 ## Getting Started
@@ -17,7 +17,16 @@ Run: ```yo simpleapp```
 
 ## Usage
 
-TODO
+```grunt build``` Builds all content of ```app/``` directory into ```dist/```. Compiles coffee and sass files,
+concatenates all scripts and stylesheets including third-party dependencies that are managed via ```bower```.
+
+```grunt serve``` Runs local web-server on ```9000``` port, compiles all changes in coffee and sass files on the fly
+and makes development process easy by running livereload automatically in the browser on file save. Also includes
+autoprefixer which automatically handles vendor prefixes.
+
+```grunt deploy``` Runs build task and pushes built files into ```gh-pages``` branch on GitHub.
+
+By default, if you're just calling ```grunt``` grunt runs ```serve``` task.
 
 ### Getting To Know Yeoman
 
