@@ -19,10 +19,21 @@ Run: ```yo simpleapp```
 
 ```grunt build``` Builds all content of ```app/``` directory into ```dist/```. Compiles coffee and sass files,
 concatenates all scripts and stylesheets including third-party dependencies that are managed via ```bower```.
+This will create single ```application.js``` and ```application.css``` files with all scripts and styles defined in
+```head``` section of index.html file:
+
+    <!-- build:css stylesheets/application.css -->
+      <link rel="stylesheet" href="stylesheets/application.css">
+    <!-- endbuild -->
+
+    <!-- build:js javascripts/application.js -->
+      <script type="text/javascript" src="bower_components/jquery/jquery.js"></script>
+      <script type="text/javascript" src="javascripts/application.js"></script>
+    <!-- endbuild -->
 
 ```grunt serve``` Runs local web-server on ```9000``` port, compiles all changes in coffee and sass files on the fly
 and makes development process easy by running livereload automatically in the browser on file save. Also includes
-autoprefixer which automatically handles vendor prefixes.
+css autoprefixer which automatically handles vendor prefixes.
 
 ```grunt deploy``` Runs build task and pushes built files into ```gh-pages``` branch on GitHub.
 
