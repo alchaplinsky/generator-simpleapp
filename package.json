@@ -1,7 +1,7 @@
 {
   "name": "generator-simpleapp",
-  "version": "0.1.2",
-  "description": "Scaffold for simple web app with support of coffee and sass",
+  "version": "0.1.3",
+  "description": "Scaffold for simple web app with support of coffee and sass, livereload and autoprefixer",
   "license": "MIT",
   "main": "app/index.js",
   "homepage": "https://github.com/alchapone/generator-simpleapp",
@@ -25,12 +25,10 @@
   ],
   "keywords": [
     "yeoman-generator",
-    "web",
-    "app",
     "front-end",
     "coffeescript",
     "sass",
-    "jquery",
+    "livereload",
     "grunt"
   ],
   "dependencies": {
